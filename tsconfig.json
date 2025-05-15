@@ -20,9 +20,13 @@
   },
   "watchOptions": {
 
-    "watchFile": "dynamicPriorityPolling",
+    "watchFile": "priorityPollingInterval",
 
-    "watchDirectory": "dynamicPriorityPolling",
+    "watchDirectory": "dynamicprioritypolling",
+
+    "fallbackPolling": "dynamicPriority",
+
+    "synchronousWatchDirectory": true,
 
     "excludeDirectories": ["**/node_modules", "dist"]
 
