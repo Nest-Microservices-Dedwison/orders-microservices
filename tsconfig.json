@@ -20,7 +20,7 @@
   },
   "watchOptions": {
 
-    "watchFile": "priorityPollingInterval",
+    "watchFile": "dynamicPriorityPolling",
 
     "watchDirectory": "dynamicprioritypolling",
 

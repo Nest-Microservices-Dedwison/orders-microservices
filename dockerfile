@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 # RUN npm install -g npm@11.3.0
 
 # Instalar OpenSSL explícitamente
-RUN apt-get update -y && apt-get install -y openssl
+RUN apt-get update -y && apt-get install -y openssl procps
 
 # Configurar npm para usar un mirror alternativo
 RUN npm config set registry https://registry.npmjs.org/
