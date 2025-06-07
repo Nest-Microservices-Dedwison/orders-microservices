@@ -20,7 +20,7 @@ FROM node:20-slim AS build
 ARG ORDERS_DATABASE_URL
 ENV DATABASE_URL=$ORDERS_DATABASE_URL
 
-RUN echo "database_url ::: $ORDERS_DATABASE_URL"
+# RUN echo "database_url ::: $ORDERS_DATABASE_URL" ## Para depurar -visualizando los logs (evitar exponer datos sensibles)
 
 WORKDIR /usr/src/app
 
