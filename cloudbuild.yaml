@@ -4,7 +4,7 @@ steps:
   args:
     - -c
     - |
-      docker build -t southamerica-west1-docker.pkg.dev/tienda-microservicios-462023/image-registry/orders-ms -f dockerfile.prod --platform=linux/amd64 --build-arg ORDERS_DATABASE_URL=$$DATABASE_URL .
+      docker build -t southamerica-west1-docker.pkg.dev/tienda-microservicios-462023/image-registry/orders-ms -f Dockerfile.prod --platform=linux/amd64 --build-arg ORDERS_DATABASE_URL=$$DATABASE_URL .
   secretEnv: ['DATABASE_URL']
 
 - name: 'gcr.io/cloud-builders/docker'
@@ -20,4 +20,4 @@ availableSecrets:
     env: 'DATABASE_URL'
 options:
   logging: CLOUD_LOGGING_ONLY
-# Done
+# All Done
